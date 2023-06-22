@@ -1,0 +1,52 @@
+#form_body{
+    border: 0.05rem solid black;
+    margin: 0;
+    height: 100vh;
+    width: 60%;
+}
+
+#form_body p {
+    border: 2px solid greenyellow;
+    box-sizing: border-box;
+    height: 100px;
+    text-align: center;
+    width: auto;
+}
+
+body {
+    display: flex;
+}
+
+/*correctly adjusting leaf picture*/
+.sidebar > img{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.sidebar{
+    position: relative;
+    width: 40%;
+}
+
+.logo{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    height: 9rem;
+}
+
+.odin-text{
+    font-size: 30px;
+}
