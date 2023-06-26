@@ -1,32 +1,36 @@
-#form_body{
-    border: 0.05rem solid black;
+@font-face {
+    font-family: "norse-bold";
+    src: url("Norse-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+* {
     margin: 0;
-    height: 100vh;
-    width: 60%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#form_body p {
-    border: 2px solid greenyellow;
-    box-sizing: border-box;
-    height: 100px;
-    text-align: center;
-    width: auto;
-}
 
 body {
     display: flex;
+    margin: 0;
 }
+
 
 /*correctly adjusting leaf picture*/
-.sidebar > img{
+/*.sidebar > img{
     height: 100vh;
-    width: 100%;
-}
+    width: auto;
+}*/
 
-
+/*Allows for sidebar to have the logo go over. 
+And to give it proper width against the form*/
 .sidebar{
     position: relative;
-    width: 40%;
+    width: 40vw;
+    background: url("background-image.jpg") no-repeat center center;
+    background-size: 100% 100%;
 }
 
 .logo{
@@ -34,19 +38,74 @@ body {
     top: 30%;
     right: 0;
     left: 0;
-    margin: auto;
+    margin: 0;
     background: black;
     opacity: 0.6;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 135px;
 }
 
 .logo > img {
-    height: 9rem;
+    height: 100px;
 }
 
 .odin-text{
-    font-size: 30px;
+    font-family: "norse-bold";
+    font-size: 75px;
+}
+
+
+
+#form_body{
+    border: 0.05rem solid black;
+    margin: 0;
+    height: 100vh;
+    width: 60vw;
+    background-color: #F9FAFB;
+}
+
+#form_body p {
+    height: 100px;
+    text-align: center;
+    width: auto;
+    margin: 0;
+}
+
+#form_body > p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+}
+
+
+
+input, label{
+    display: block;
+}
+
+input {
+    border: 2px solid #e5e7eb;
+    border-radius: 5px;
+    padding: 5px;
+    width: 225px;
+    margin: 3px 70px 30px 20px;
+}
+
+button {
+    background-color: #596D48;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    color: white;
+}
+
+.input-color {
+    background-color: #FFFFFF;
+}
+
+
+.input-divs {
+    float: left;
 }
