@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -28,7 +29,7 @@ body {
 And to give it proper width against the form*/
 .sidebar{
     position: relative;
-    width: 40vw;
+    width: 35vw;
     background: url("background-image.jpg") no-repeat center center;
     background-size: 100% 100%;
 }
@@ -63,21 +64,19 @@ And to give it proper width against the form*/
     border: 0.05rem solid black;
     margin: 0;
     height: 100vh;
-    width: 60vw;
+    width: 65vw;
     background-color: #F9FAFB;
 }
 
-#form_body p {
+.top-text {
     height: 100px;
-    text-align: center;
-    width: auto;
-    margin: 0;
+    width: 40vw;
+    margin: 100px 30px 30px;
+    text-align: start;
+    font-weight: 600;
 }
 
-#form_body > p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 30px;
-}
+
 
 
 
@@ -90,22 +89,43 @@ input {
     border-radius: 5px;
     padding: 5px;
     width: 225px;
-    margin: 3px 70px 30px 20px;
+    margin: 3px 70px 20px 20px;
 }
 
 button {
     background-color: #596D48;
     border-radius: 5px;
     border: none;
-    padding: 2px;
+    padding: 14px 44px;
     color: white;
+    margin: 30px;
+    font-weight: bold;
+    font-size: medium;
 }
 
 .input-color {
     background-color: #FFFFFF;
+    padding: 20px 30px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
+.input-color h3 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
 
 .input-divs {
     float: left;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.bottom-text {
+    height: 100px;
+    width: auto;
+    margin: 5px 30px 30px;
+    text-align: start;
 }
