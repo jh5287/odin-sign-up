@@ -63,7 +63,6 @@ that is adjacent to the sidebar
 */
 
 #form_body{
-    border: 0.05rem solid black;
     margin: 0;
     width: 65vw;
     background-color: #F9FAFB;
@@ -105,7 +104,7 @@ input {
 label {
     margin-bottom: 5px;
     font-size: 15px;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 button {
