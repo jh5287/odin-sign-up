@@ -14,19 +14,18 @@
 
 
 body {
+    height: 100%;
     display: flex;
     margin: 0;
 }
 
 
-/*correctly adjusting leaf picture*/
-/*.sidebar > img{
-    height: 100vh;
-    width: auto;
-}*/
 
-/*Allows for sidebar to have the logo go over. 
-And to give it proper width against the form*/
+
+/*
+Allows for sidebar to have the logo go over. 
+And to give it proper width against the form
+*/
 .sidebar{
     position: relative;
     width: 35vw;
@@ -58,38 +57,55 @@ And to give it proper width against the form*/
     font-size: 75px;
 }
 
-
+/*
+formatting for the form body 
+that is adjacent to the sidebar
+*/
 
 #form_body{
     border: 0.05rem solid black;
     margin: 0;
-    height: 100vh;
     width: 65vw;
     background-color: #F9FAFB;
 }
 
 .top-text {
     height: 100px;
-    width: 40vw;
-    margin: 100px 30px 30px;
+    width: 66%;
+    margin: 75px 30px 55px;
     text-align: start;
     font-weight: 600;
 }
 
-
-
-
-
-input, label{
-    display: block;
+.bottom-text {
+    height: 100px;
+    width: auto;
+    margin: 5px 30px 30px;
+    text-align: start;
 }
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+/*
+Formatting for all form controls 
+*/
+
+
 
 input {
     border: 2px solid #e5e7eb;
     border-radius: 5px;
     padding: 5px;
-    width: 225px;
-    margin: 3px 70px 20px 20px;
+    width: min(300px, 100%);
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 15px;
+    opacity: 0.4;
 }
 
 button {
@@ -107,25 +123,28 @@ button {
     background-color: #FFFFFF;
     padding: 20px 30px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.input-color h3 {
+.input-color div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-color p {
     margin-top: 15px;
     margin-bottom: 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    
 }
 
-.input-divs {
-    float: left;
-}
 
-a {
-    color: #596D48;
-    text-decoration: none;
-}
 
-.bottom-text {
-    height: 100px;
-    width: auto;
-    margin: 5px 30px 30px;
-    text-align: start;
-}
+
+
+
